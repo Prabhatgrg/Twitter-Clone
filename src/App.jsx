@@ -1,4 +1,3 @@
-import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import Searchbar from "./components/sidebar/Searchbar";
 
