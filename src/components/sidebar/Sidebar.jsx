@@ -1,6 +1,8 @@
 import {RiHome7Fill} from 'react-icons/ri';
 import {AiOutlineSearch} from 'react-icons/ai';
 import {IoMdNotificationsOutline} from 'react-icons/io';
+import {FaRegEnvelope} from 'react-icons/fa';
+
 import { Link, createBrowserRouter, RouterProvider } from "react-router-dom";
 import styles from './Sidebar.module.css';
 
@@ -11,7 +13,7 @@ const Sidebar = () => {
             <li><Link to="#"><RiHome7Fill />Home</Link></li>
             <li><Link to="#"><AiOutlineSearch />Explore</Link></li>
             <li><Link to="#"><IoMdNotificationsOutline />Notifications</Link></li>
-            <li><Link to="#">Messages</Link></li>
+            <li><Link to="#"><FaRegEnvelope />Messages</Link></li>
             <li><Link to="#">Lists</Link></li>
             <li><Link to="#">Communities</Link></li>
             <li><Link to="#">Verified</Link></li>
