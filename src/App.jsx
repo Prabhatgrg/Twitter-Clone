@@ -4,8 +4,10 @@ import Searchbar from "./components/Search/Searchbar";
 function App() {
     return (
         <>
+          <div class="container mx-auto px-10">
             <Sidebar/>
             <Searchbar />
+          </div>
         </>
     );
 }
