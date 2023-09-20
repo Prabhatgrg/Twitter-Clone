@@ -4,10 +4,13 @@ import Searchbar from "./components/Search/Searchbar";
 function App() {
     return (
         <>
-          <div class="container mx-auto px-10">
-            <Sidebar/>
-            <Searchbar />
-          </div>
+            <div class="container mx-auto px-10">
+                <div className="grid grid-cols-4 items-start">
+                    <Sidebar />
+                    <div className="col-span-2"></div>
+                    <Searchbar />
+                </div>
+            </div>
         </>
     );
 }
