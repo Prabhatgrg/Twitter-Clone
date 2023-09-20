@@ -1,9 +1,13 @@
 import {RiHome7Fill} from 'react-icons/ri';
 import {AiOutlineSearch} from 'react-icons/ai';
-import {IoMdNotificationsOutline} from 'react-icons/io';
-import {FaRegEnvelope} from 'react-icons/fa';
+import {IoMdNotificationsOutline, IoPeopleOutline} from 'react-icons/io';
+import {FaRegEnvelope, FaXTwitter} from 'react-icons/fa';
+import {RiFileList2Line} from 'react-icons/ri';
+import {BsPerson} from 'react-icons/bs';
+import {CiCircleMore} from 'react-icons/ci';
 
-import { Link, createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 import styles from './Sidebar.module.css';
 
 const Sidebar = () => {
@@ -14,11 +18,11 @@ const Sidebar = () => {
             <li><Link to="#"><AiOutlineSearch />Explore</Link></li>
             <li><Link to="#"><IoMdNotificationsOutline />Notifications</Link></li>
             <li><Link to="#"><FaRegEnvelope />Messages</Link></li>
-            <li><Link to="#">Lists</Link></li>
-            <li><Link to="#">Communities</Link></li>
-            <li><Link to="#">Verified</Link></li>
-            <li><Link to="#">Profile</Link></li>
-            <li><Link to="#">More</Link></li>
+            <li><Link to="#"><RiFileList2Line />Lists</Link></li>
+            <li><Link to="#"><IoPeopleOutline />Communities</Link></li>
+            <li><Link to="#"><FaXTwitter />Verified</Link></li>
+            <li><Link to="#"><BsPerson />Profile</Link></li>
+            <li><Link to="#"><CiCircleMore />More</Link></li>
         </ul>
     </div>
   )
