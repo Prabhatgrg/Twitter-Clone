@@ -11,66 +11,71 @@ import { Link } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 
 const Sidebar = () => {
-    return (
-        <div className={styles.sidebar}>
-            <ul>
-                <li>
-                    <Link to="#">
-                        <RiHome7Fill />
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">
-                        <AiOutlineSearch />
-                        Explore
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">
-                        <IoMdNotificationsOutline />
-                        Notifications
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">
-                        <FaRegEnvelope />
-                        Messages
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">
-                        <RiFileList2Line />
-                        Lists
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">
-                        <IoPeopleOutline />
-                        Communities
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">
-                        <FaXTwitter />
-                        Verified
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">
-                        <BsPerson />
-                        Profile
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">
-                        <CiCircleMore />
-                        More
-                    </Link>
-                </li>
-            </ul>
+  return (
+    <>
+      <div className={styles.sidebar}>
+        <ul>
+          <li>
+            <Link to="#">
+              <RiHome7Fill />
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <AiOutlineSearch />
+              Explore
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <IoMdNotificationsOutline />
+              Notifications
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <FaRegEnvelope />
+              Messages
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <RiFileList2Line />
+              Lists
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <IoPeopleOutline />
+              Communities
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <FaXTwitter />
+              Verified
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <BsPerson />
+              Profile
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <CiCircleMore />
+              More
+            </Link>
+          </li>
+        </ul>
+        <div className="postButton">
+          <button className="bg-post-blue w-1/2 px-5 py-3 rounded-full">Post</button>
         </div>
-    );
+      </div>
+    </>
+  );
 };
 
 export default Sidebar;
