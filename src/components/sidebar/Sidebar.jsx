@@ -1,3 +1,4 @@
+import logo from "../../assets/img/logo.svg";
 import { RiHome7Fill } from "react-icons/ri";
 import { AiOutlineSearch } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
@@ -14,6 +15,9 @@ const Sidebar = () => {
   return (
     <>
       <div className={styles.sidebar}>
+        <Link to="#" className="py-2 inline-block">
+          <img src={logo} alt="Main logo" />
+        </Link>
         <ul>
           <li>
             <Link to="#">
@@ -70,8 +74,10 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
-        <div className="postButton">
-          <button className="bg-primary w-1/2 px-5 py-3 rounded-full hover:bg-primary-hover">Post</button>
+        <div className="postButton mt-4">
+          <button className="bg-primary w-3/5 px-5 py-3 rounded-full hover:bg-primary-hover">
+            Post
+          </button>
         </div>
       </div>
     </>
