@@ -8,6 +8,7 @@ export default {
                 "dark": "#16181C",
                 "dark-hover": "#1D1F23",
                 "gray": "#53575D",
+                "gray-hover": "#e7e9ea"
             },
         },
     },
