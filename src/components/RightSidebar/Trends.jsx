@@ -35,7 +35,7 @@ const TrendsCard = ({ topic, title, count }) => {
 };
 
 const Trends = () => {
-    const tranding = [
+    const trending = [
         {
             id: 1,
             topic: "Trending in nepal",
@@ -62,7 +62,7 @@ const Trends = () => {
                 <h2 className="text-xl px-4 font-bold mb-3">Trends for you</h2>
 
                 <div className="relative">
-                    {tranding.map((trend) => (
+                    {trending.map((trend) => (
                         <TrendsCard key={trend.id} topic={trend.topic} title={trend.title} count={trend.count} />
                     ))}
                 </div>
