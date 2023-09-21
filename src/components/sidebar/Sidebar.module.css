@@ -1,3 +1,9 @@
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
 .sidebar ul a {
   display: flex;
   align-items: center;
@@ -6,14 +12,29 @@
   list-style-type: none;
 }
 
-ul{
+.sidebar ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: start;
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
 
-svg{
+.sidebar li{
+  padding: 10px 30px 10px 12px;
+  border-radius: 2rem;
+}
+
+.sidebar li:hover {
+  background-color: #181818;
+}
+
+svg {
   font-size: 25px;
+}
+
+.useraccountImg img{
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
 }
