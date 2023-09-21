@@ -4,6 +4,7 @@ export default {
         extend: {
             backgroundColor:{
                 'post-blue': '#1D9BF0',
+                'post-blue-hover': '#108CD8',
             },
         },
     },
