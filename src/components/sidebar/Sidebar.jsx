@@ -74,8 +74,8 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
-        <div className="postButton">
-          <button className="bg-primary w-1/2 px-5 py-3 rounded-full hover:bg-primary-hover">
+        <div className="postButton mt-4">
+          <button className="bg-primary w-3/5 px-5 py-3 rounded-full hover:bg-primary-hover">
             Post
           </button>
         </div>
