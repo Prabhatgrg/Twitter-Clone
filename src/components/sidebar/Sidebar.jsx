@@ -14,70 +14,75 @@ import styles from "./Sidebar.module.css";
 const Sidebar = () => {
   return (
     <>
-      <div className={styles.sidebar}>
-        <Link to="#" className="py-2 inline-block">
-          <img src={logo} alt="Main logo" />
-        </Link>
-        <ul>
-          <li>
-            <Link to="#">
-              <RiHome7Fill />
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <AiOutlineSearch />
-              Explore
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <IoMdNotificationsOutline />
-              Notifications
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <FaRegEnvelope />
-              Messages
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <RiFileList2Line />
-              Lists
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <IoPeopleOutline />
-              Communities
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <FaXTwitter />
-              Verified
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <BsPerson />
-              Profile
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <CiCircleMore />
-              More
-            </Link>
-          </li>
-        </ul>
-        <div className="postButton mt-4">
-          <button className="bg-primary w-3/5 px-5 py-3 rounded-full hover:bg-primary-hover">
-            Post
-          </button>
+      <div className="mainSidebar flex-col gap-4">
+        <div className={styles.sidebar}>
+          <Link to="#" className="py-2 inline-block">
+            <img src={logo} alt="Main logo" />
+          </Link>
+          <ul>
+            <li>
+              <Link to="#">
+                <RiHome7Fill />
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <AiOutlineSearch />
+                Explore
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <IoMdNotificationsOutline />
+                Notifications
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <FaRegEnvelope />
+                Messages
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <RiFileList2Line />
+                Lists
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <IoPeopleOutline />
+                Communities
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <FaXTwitter />
+                Verified
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <BsPerson />
+                Profile
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <CiCircleMore />
+                More
+              </Link>
+            </li>
+          </ul>
+          <div className="postButton mt-4">
+            <button className="bg-primary w-3/5 px-5 py-3 rounded-full hover:bg-primary-hover">
+              Post
+            </button>
+          </div>
+        </div>
+        <div className="userAccountinfo">
+          info
         </div>
       </div>
     </>
