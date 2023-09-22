@@ -1,5 +1,7 @@
 import user from "../../assets/img/default-user.png";
 import logo from "../../assets/img/logo.svg";
+import styles from "./Sidebar.module.css";
+import { useState, useSyncExternalStore } from "react";
 import { RiHome7Fill } from "react-icons/ri";
 import { AiOutlineSearch } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
@@ -10,9 +12,11 @@ import { RiFileList2Line } from "react-icons/ri";
 import { BsPerson } from "react-icons/bs";
 import { CiCircleMore } from "react-icons/ci";
 import { Link } from "react-router-dom";
-import styles from "./Sidebar.module.css";
+import { BsThreeDots } from "react-icons/bs";
+import { PiSmileySad } from "react-icons/pi";
 
 const Sidebar = () => {
+  const [isToggle, setToggle] = useState(false);
   return (
     <>
       <div className="main-sidebar flex-col">
@@ -86,8 +90,8 @@ const Sidebar = () => {
         </div>
 
         <div className="main-useraccount-info flex items-center gap-4">
-          <div className={ styles.useraccountImg }>
-            <img src={ user } alt="User" />
+          <div className={styles.useraccountImg}>
+            <img src={user} alt="User" />
           </div>
           <div className="useraccount-details">
             <div className="user">
@@ -96,6 +100,8 @@ const Sidebar = () => {
             <div className="username">
               <span>@PrabhatGurung12</span>
             </div>
+          </div>
+          <div className="useraccount-more">
           </div>
         </div>
       </div>
