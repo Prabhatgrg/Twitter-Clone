@@ -19,7 +19,7 @@ const Sidebar = () => {
   const [isToggle, setToggle] = useState(false);
   return (
     <>
-      <div className="main-sidebar flex-col">
+      <div className="main-sidebar flex-col fixed">
         <div className={styles.sidebar}>
           <div className="main-sidebar-content">
             <Link to="#" className="py-2 px-3 inline-block">
@@ -82,7 +82,7 @@ const Sidebar = () => {
               </li>
             </ul>
             <div className="post-button mt-4">
-              <button className="bg-primary w-3/5 px-5 py-3 rounded-full hover:bg-primary-hover">
+              <button className="bg-primary w-64 px-5 py-3 rounded-full hover:bg-primary-hover">
                 Post
               </button>
             </div>
