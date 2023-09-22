@@ -1,6 +1,7 @@
 import Searchbar from "./Searchbar";
 import Subscription from "./Subscription";
 import Trends from "./Trends";
+import WhoToFollow from "./WhoToFollow";
 
 const RightSidebar = () => {
     return (
@@ -8,6 +9,7 @@ const RightSidebar = () => {
             <Searchbar />
             <Subscription />
             <Trends />
+            <WhoToFollow />
         </div>
     );
 };

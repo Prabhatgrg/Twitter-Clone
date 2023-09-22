@@ -1,4 +1,5 @@
 import TrendsItem from "./TrendsItem";
+import { Link } from "react-router-dom";
 
 const Trends = () => {
     const trending = [
@@ -48,7 +49,9 @@ const Trends = () => {
                     {trending.map((trend) => (
                         <TrendsItem key={trend.id} topic={trend.topic} title={trend.title} count={trend.count} url={trend.url} />
                     ))}
-                    <button className="p-4 block w-full text-start hover:bg-dark-hover text-primary">Show more</button>
+                    <Link to="#" className="p-4 block w-full text-start hover:bg-dark-hover text-primary">
+                        Show more
+                    </Link>
                 </div>
             </div>
         </div>
