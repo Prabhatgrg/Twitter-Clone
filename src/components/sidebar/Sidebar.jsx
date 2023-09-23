@@ -98,7 +98,7 @@ const Sidebar = () => {
             <div className="user">
               <span>Prabhat</span>
             </div>
-            <div className="username">
+            <div className="username text-gray">
               <span>@PrabhatGurung12</span>
             </div>
           </div>

@@ -14,6 +14,7 @@ export default {
                 "primary": "#1D9BF0",
                 "primary-hover": "#108CD8",
                 "gold": "#cb7b00",
+                "gray": "#71767B",
             },
         },
     },
