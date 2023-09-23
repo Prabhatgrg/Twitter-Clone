@@ -1,40 +1,39 @@
-.sidebar{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 90vh;
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .sidebar ul a {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: white;
-  list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    list-style-type: none;
 }
 
 .sidebar ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
 }
 
-.sidebar li{
-  padding: 10px 30px 10px 12px;
-  border-radius: 2rem;
+.sidebar li {
+    padding: 10px 30px 10px 12px;
+    border-radius: 2rem;
 }
 
 .sidebar li:hover {
-  background-color: #181818;
+    background-color: #181818;
 }
 
 svg {
-  font-size: 25px;
+    font-size: 25px;
 }
 
-.useraccountImg img{
-  width: 45px;
-  height: 45px;
-  object-fit: cover;
+.useraccountImg img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
 }
