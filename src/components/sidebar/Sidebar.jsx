@@ -17,96 +17,94 @@ import { BsThreeDots } from "react-icons/bs";
 import { PiSmileySad } from "react-icons/pi";
 
 const Sidebar = () => {
-  const [isToggle, setToggle] = useState(false);
-  return (
-    <>
-      <div className="main-sidebar flex-col fixed">
-        <div className={styles.sidebar}>
-          <div className="main-sidebar-content">
-            <Link to="#" className="py-2 px-3 inline-block">
-              <img src={logo} alt="Main logo" />
-            </Link>
-            <ul>
-              <li>
-                <Link to="#">
-                  <RiHome7Fill />
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <AiOutlineSearch />
-                  Explore
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <IoMdNotificationsOutline />
-                  Notifications
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <FaRegEnvelope />
-                  Messages
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <RiFileList2Line />
-                  Lists
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <IoPeopleOutline />
-                  Communities
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <FaXTwitter />
-                  Verified
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <BsPerson />
-                  Profile
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <CiCircleMore />
-                  More
-                </Link>
-              </li>
-            </ul>
-            <div className="post-button mt-4">
-              <button className="bg-primary w-64 px-5 py-3 rounded-full hover:bg-primary-hover">
-                Post
-              </button>
-            </div>
-          </div>
-        </div>
+    const [isToggle, setToggle] = useState(false);
+    return (
+        <>
+            <div className="main-sidebar flex flex-col gap-10 sticky top-0">
+                <div className={styles.sidebar}>
+                    <div className="main-sidebar-content">
+                        <Link to="#" className="py-2 px-3 inline-block">
+                            <img src={logo} alt="Main logo" />
+                        </Link>
+                        <ul>
+                            <li>
+                                <Link to="#">
+                                    <RiHome7Fill />
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#">
+                                    <AiOutlineSearch />
+                                    Explore
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#">
+                                    <IoMdNotificationsOutline />
+                                    Notifications
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#">
+                                    <FaRegEnvelope />
+                                    Messages
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#">
+                                    <RiFileList2Line />
+                                    Lists
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#">
+                                    <IoPeopleOutline />
+                                    Communities
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#">
+                                    <FaXTwitter />
+                                    Verified
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#">
+                                    <BsPerson />
+                                    Profile
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#">
+                                    <CiCircleMore />
+                                    More
+                                </Link>
+                            </li>
+                        </ul>
+                        <div className="post-button mt-4">
+                            <button className="bg-primary w-64 px-5 py-3 rounded-full hover:bg-primary-hover">Post</button>
+                        </div>
+                    </div>
+                </div>
 
-        <div className="main-useraccount-info flex items-center gap-4">
-          <div className={styles.useraccountImg}>
-            <img src={user} alt="User" />
-          </div>
-          <div className="useraccount-details">
-            <div className="user">
-              <span>Prabhat</span>
+                <div className="main-useraccount-info flex items-center gap-4">
+                    <div className={styles.useraccountImg}>
+                        <img src={user} alt="User" />
+                    </div>
+                    <div className="useraccount-details">
+                        <div className="user">
+                            <span>Prabhat</span>
+                        </div>
+                        <div className="username">
+                            <span>@PrabhatGurung12</span>
+                        </div>
+                    </div>
+                    <div className="useraccount-more"></div>
+                </div>
             </div>
-            <div className="username">
-              <span>@PrabhatGurung12</span>
-            </div>
-          </div>
-          <div className="useraccount-more"></div>
-        </div>
-      </div>
-    </>
-  );
+        </>
+    );
 };
 
 export default Sidebar;

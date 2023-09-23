@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Searchbar from "./Searchbar";
 import Subscription from "./Subscription";
 import Trends from "./Trends";
@@ -10,6 +11,7 @@ const RightSidebar = () => {
             <Subscription />
             <Trends />
             <WhoToFollow />
+            <Footer />
         </div>
     );
 };
